@@ -1,0 +1,36 @@
+ NextArsenalMatch 1.0.80 (January 2014)
+ - [ADDED]		Base project, layout and database interfaces
+ - [ADDED]		Styles
+ - [ADDED]		Integration with database
+ - [CHANGED]	New App Icon
+ - [ADDED]		About Screen
+ - [ADDED]		Update data db from assets when data version changes
+ - [ADDED]		Show competition type
+ - [ADDED]		show if Star match
+ 
+ NextArsenalMatch 1.0.95 (January 2014)
+ - [FIXED]		All matches were treated as home matches
+ - [ADDED]		Competition type with color code in upcoming match list
+ - [CHANGED]	Layout
+ - [ADDED]		Share icon
+ - [CHANGED]	Introduced Holo colors
+ - [ADDED]		Match location / stadium name
+ - [UPDATED]	Match info
+ - [FIXED]		Database connection leak
+ 
+ NextArsenalMatch 1.0.98 (January 2014)
+ - [ADDED] 		Show time for match
+ - [ADDED]		New landscape layout
+ - [ADDED]		Animations
+ 
+ NextArsenalMatch 1.0.99 (February 2014)
+ - [FIXED]		Days left fix
+ - [UPDATED]	Match Data
+ 
+  NextArsenalMatch 1.0.101 (March 2014)
+ - [ADDED]		About app in layout 
+ 
+  NextArsenalMatch 1.0.105 (April 2014)
+ - [ADDED]		Styles for about text
+ 
+ Count down for match start

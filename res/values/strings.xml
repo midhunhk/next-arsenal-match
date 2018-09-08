@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Next Arsenal Match</string>
+    <string name="app_version">Version 1.0.105 (April 2014)</string>
+    <string name="app_desc">This minimalistic app shows you the next Arsenal FC\'s match and related information</string>
+    <string name="app_copyright">&#169; 2014 ae Labs</string>
+    <string name="app_developer_info">Designed &amp; developed at ae labs</string>
+    <string name="app_disclaim">This app is not affiliated to or supported by Arsenal Football Club and is not an official app. \nThe match data displayed may not be accurate.</string>
+
+    <!-- Menu / action -->
+    <string name="action_about">About</string>
+    
+    <string name="empty_list">No match data found</string>
+    <string name="empty_text">Lorem Ipsum</string>
+    
+    <!-- Competition description -->
+    <string name="competition_epl">English Premier League</string>
+    <string name="competition_ucl">Uefa Champions League</string>
+    <string name="competition_fc">The FA Cup</string>
+    <string name="competition_coc">Capital One Cup</string>
+   
+    <string name="str_today">Today</string>
+    <string name="str_tomorrow">Tomorrow</string>
+    
+    <!-- Share strings -->
+    <string name="str_share_status_subject">Next Arsenal Match against %s</string>
+    <string name="str_share_status_detail">Arsenal against %1$s, on %2$s at %3$s #NextArsenalMatch</string>
+    <string name="str_share_via">Share Match Info</string>
+
+</resources>

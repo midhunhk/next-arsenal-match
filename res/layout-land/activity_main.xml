@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:baselineAligned="false"
+    android:measureWithLargestChild="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_medium"
+    tools:context=".MainActivity" >
+
+    <!-- <android.support.v4.widget.DrawerLayout></android.support.v4.widget.DrawerLayout> -->
+    <!-- Next match will be highlighted here -->
+
+    <LinearLayout
+        android:id="@+id/nextMatchDetailsContainer"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.45"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium" >
+
+            <TextView
+                android:id="@+id/nextMatchStadiumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:text="@string/empty_text" />
+
+            <!-- Share icon -->
+
+            <ImageButton
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/share_button"
+                android:contentDescription="@string/empty_text"
+                android:padding="@dimen/padding_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nextMatchDateText"
+            style="@style/MediumSizedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_text"
+            android:textColor="@color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/nextMatchOpponentText"
+            style="@style/EmphasisedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_medium"
+            android:text="@string/empty_text" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_medium" >
+
+            <TextView
+                android:id="@+id/nextMatchVenueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:text="@string/empty_text" />
+
+            <TextView
+                android:id="@+id/nextMatchCompetitionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:text="@string/empty_text"
+                android:textColor="@color/holo_orange_dark" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/empty_text"
+                android:padding="@dimen/padding_small"
+                android:src="@drawable/ic_action_important"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/holo_red_light" />
+
+        <!-- about button -->
+
+        <TextView
+            android:id="@+id/aboutApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:text="@string/action_about"
+            android:background="#dddddd"
+            android:textColor="@color/holo_green_light"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- Rest of the matches -->
+
+    <LinearLayout
+        android:id="@+id/listContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.55"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dip"
+                android:gravity="center_vertical"
+                android:text="@string/empty_list"
+                android:textColor="@color/holo_green_light"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
